@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Handlebars from a CDN -->
+  <script src="js-plugin/handlebars.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div id="header"></div>
+    <div class="btn-group">
+      <a href="#airports" class="btn btn-outline-secondary">Главная</a>
+      <a href="#airports" class="btn btn-outline-secondary">Вход в личный кабинет</a>
+      <a href="#airports" class="btn btn-outline-secondary">Регистрация в личном кабинете</a>
+      <a href="#airports" class="btn btn-outline-secondary">Личный кабинет</a>
+      <a href="#airports" class="btn btn-outline-secondary">Результаты поиска</a>
+      <a href="#airports" class="btn btn-outline-secondary">Бронирование</a>
+      <a href="#airports" class="btn btn-outline-secondary">Управлением бронирование</a>
+      <a href="#airports" class="btn btn-outline-secondary">Выбор места в салоне воздушного судна</a>
+    </div>
+    <div id="pages">
+
+    </div>
+	</div>
+
+	<script src="entry.js" type="module"></script>
+
+  <script id="headerTemplate" type="text/template">
+    <h1>Данные из WEB-сервиса {{ name }} {{ fname}} </h1>
+  </script>
+
+  <script id="airportsTemplate" type="text/template">
+    <div>
+      <div class="container">
+      
+        <h2>Поиск аэрапортов</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form action="">
+              Введите  город: <input type="text">
+              <button>Поиск</button>
+            </form>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+
+</body>
+</html>
